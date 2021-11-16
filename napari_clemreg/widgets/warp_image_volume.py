@@ -158,6 +158,7 @@ def on_init(widget):
 
     widget.transform_type.changed.connect(toggle_transform_widget)
 
+# TODO: Add option to warp all channels --> Choose number of channels and generate same number of input options 
 @magic_factory(widget_init=on_init, layout='vertical', call_button="Warp")
 def make_image_warping(
     viewer: "napari.viewer.Viewer",
